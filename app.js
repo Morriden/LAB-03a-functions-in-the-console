@@ -3,10 +3,16 @@ const longbow = { name: 'longbow', range: 'ranged', type: 'piercing' };
 const mace = { name: 'morningstar', range: 'melee', type: 'bludgeon' };
 const crossbow = { name: 'crossbow', range: 'ranged', type: 'piercing' };
 const axe = { name: 'axe', range: 'melee', type: 'slashing' };
+const dagger = { name: 'dagger', range: 'both', type: 'piercing'};
 
-const weapons = [sword, longbow, mace, crossbow, axe];
+const weapons = [sword, longbow, mace, crossbow, axe, dagger];
 
 for(let i = 0; i < weapons.length; i++) {
     const weapon = weapons[i];
     console.log(weapon);
 }
+
+function logOutThings(array) {
+    console.log('Here are your ' + array.length + ' things!');
+}
+logOutThings(weapons)
