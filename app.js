@@ -7,12 +7,16 @@ const dagger = { name: 'dagger', range: 'both', type: 'piercing'};
 
 const weapons = [sword, longbow, mace, crossbow, axe, dagger];
 
-for(let i = 0; i < weapons.length; i++) {
-    const weapon = weapons[i];
-    console.log(weapon);
-}
+//for(let i = 0; i < weapons.length; i++) {
+//   const weapon = weapons[i];
+//    console.log(weapon);
+//}
 
 function logOutThings(array) {
     console.log('Here are your ' + array.length + ' things!');
+    for(let i = 0; i < weapons.length; i++) {
+        const weapon = weapons[i];
+        console.log(weapon);
+    }
 }
 logOutThings(weapons)
