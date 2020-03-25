@@ -17,6 +17,11 @@ function logOutThings(array) {
     for(let i = 0; i < weapons.length; i++) {
         const weapon = weapons[i];
         console.log(weapon);
+        if(weapon.type === 'slashing') {
+            console.log(weapon.name + ' is for the fighter!');
+        } else {
+            console.log(weapon.name + ' is for the rogue!');
+        }
     }
 }
 logOutThings(weapons)
