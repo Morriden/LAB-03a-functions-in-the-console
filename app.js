@@ -19,6 +19,8 @@ function logOutThings(array) {
         console.log(weapon);
         if(weapon.type === 'slashing') {
             console.log(weapon.name + ' is for the fighter!');
+        } else if (weapon.type === 'bludgeon') {
+            console.log(weapon.name + ' is for the cleric!');
         } else {
             console.log(weapon.name + ' is for the rogue!');
         }
